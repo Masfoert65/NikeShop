@@ -468,6 +468,82 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 24 31 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(238 237 240 / var(--tw-text-opacity));
+}
+
+.site-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.site-block_Navbar {
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  padding-top: 3.5rem;
+  padding-bottom: 7rem;
+}
+
+.site-block_navbar--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-block_navbar--desktop {
+    display: flex;
+  }
+}
+
+.site-block_navbar--mobile {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .site-block_navbar--mobile {
+    display: none;
+  }
+}
+
+.navbar_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-block-menu-item {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-underline-offset: 8px;
+}
+
+.navbar-block-menu-item:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-shadow: 0px 0px 16px rgba(203,105,193,0.8);
+}
+
+.cqfdfewf {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .cqfdfewf {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -543,14 +619,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .h-full {
@@ -678,11 +746,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 24 31 / var(--tw-bg-opacity));
-}
-
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(203 105 193 / var(--tw-bg-opacity));
@@ -719,11 +782,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5rem;
 }
 
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
-}
-
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -737,14 +795,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
-.pb-28 {
-  padding-bottom: 7rem;
 }
 
 .pt-96 {
@@ -784,11 +834,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -814,10 +859,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -826,18 +867,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(238 237 240 / var(--tw-text-opacity));
+.font-bold {
+  font-weight: 700;
 }
 
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(203 105 193 / var(--tw-text-opacity));
-}
-
-.underline-offset-8 {
-  text-underline-offset: 8px;
 }
 
 .opacity-20 {
@@ -861,15 +897,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:underline:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-.hover\:text-blur:hover{
-  text-shadow: 0px 0px 16px rgba(203,105,193,0.8);
 }
 
 .group:hover .group-hover\:scale-105 {
@@ -932,21 +959,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
   }
 
   .md\:text-3xl {

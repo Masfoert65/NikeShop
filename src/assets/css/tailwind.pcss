@@ -7,3 +7,36 @@
         text-shadow: 0px 0px 16px rgba(203,105,193,0.8);
     }
 }
+@layer components {
+body {
+@apply bg-black text-white
+ }
+ .site-block {
+     @apply flex flex-col mx-auto h-screen
+ }
+    .site-block_Navbar {
+        @apply items-center justify-between pt-14 px-11 pb-28
+    }
+    .site-block_navbar--desktop {
+        @apply md:flex hidden
+    }
+    .site-block_navbar--mobile {
+        @apply md:hidden flex
+    }
+    .navbar_block {
+        @apply flex items-center justify-center
+    }
+    .navbar-block-menu-item {
+        @apply text-2xl hover:text-blur hover:underline underline-offset-8
+    }
+    .site-block_divider {
+        @apply flex items-center justify-center w-full py-28;
+
+    }
+    .site-block_divider_line {
+
+}
+.cqfdfewf{
+    @apply text-center font-bold md:text-7xl text-5xl
+}
+}
